@@ -5,7 +5,7 @@ const useStyles = makeStyles({
   paper: {
     padding: '1.5em',
     borderRadius: '8px',
-    width: '388px',
+    width: '300px',
   },
   paperContainer: {
     display: 'flex',

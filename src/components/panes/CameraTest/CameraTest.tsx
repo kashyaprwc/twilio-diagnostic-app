@@ -10,6 +10,7 @@ import {
   Select,
   Typography,
 } from '@material-ui/core';
+import clsx from 'clsx';
 import { ActivePane, useAppStateContext } from '../../AppStateProvider/AppStateProvider';
 import { SmallError } from '../../../icons/SmallError';
 import { useCameraTest } from './useCameraTest/useCameraTest';
@@ -19,17 +20,23 @@ const useStyles = makeStyles({
   paper: {
     padding: '2em',
     borderRadius: '8px',
+    width: '300px',
   },
   videoContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
+  mobileAspectRatioContainer: {
+    '@media (max-width:600px)': {
+      minHeight: '400px',
+    },
+  },
   aspectRatioContainer: {
     position: 'relative',
     display: 'flex',
-    width: '80%',
-    padding: '1em',
+    width: '99%',
+    padding: '5px',
     margin: '1em 0',
     '&::after': {
       content: '""',
@@ -138,7 +145,7 @@ export function CameraTest() {
               <Typography variant="subtitle2">
                 <strong>Video Preview</strong>
               </Typography>
-              <div className={classes.aspectRatioContainer}>
+              <div className={clsx(classes.aspectRatioContainer, classes.mobileAspectRatioContainer)}>
                 <video ref={videoElementRef} />
               </div>
             </Grid>

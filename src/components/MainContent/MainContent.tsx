@@ -53,10 +53,16 @@ const useStyles = makeStyles({
     height: '100vh',
     overflow: 'auto',
     padding: '10%',
+    paddingBottom: '20%',
   },
   hideItem: {
     visibility: 'hidden',
     position: 'fixed',
+  },
+  desktopOnly: {
+    '@media (max-width:600px)': {
+      display: 'none',
+    },
   },
   buttonContainer: {
     position: 'absolute',
@@ -143,7 +149,9 @@ export function MainContent() {
 
   return (
     <>
-      <Snackbar open={isSnackbarOpen} />
+      <div className={classes.desktopOnly}>
+        <Snackbar open={isSnackbarOpen} />
+      </div>
       <div className={classes.contentContainer}>
         <div
           className={clsx(classes.scrollContainer, {
