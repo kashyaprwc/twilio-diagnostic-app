@@ -18,13 +18,9 @@ import useDevices from '../../../hooks/useDevices/useDevices';
 
 const useStyles = makeStyles({
   paper: {
-    padding: '2em',
+    padding: '1em',
     borderRadius: '8px',
-  },
-  mobilePaper: {
-    '@media (max-width:600px)': {
-      minHeight: '300px',
-    },
+    width: '300px',
   },
   videoContainer: {
     display: 'flex',
@@ -33,7 +29,7 @@ const useStyles = makeStyles({
   },
   mobileAspectRatioContainer: {
     '@media (max-width:600px)': {
-      minHeight: '400px',
+      minHeight: '300px',
     },
   },
   aspectRatioContainer: {
@@ -150,7 +146,7 @@ export function CameraTest() {
                 <strong>Video Preview</strong>
               </Typography>
               <div className={clsx(classes.aspectRatioContainer, classes.mobileAspectRatioContainer)}>
-                <video ref={videoElementRef} />
+                <video loop muted playsInline autoPlay ref={videoElementRef} />
               </div>
             </Grid>
             <FormControl fullWidth>

@@ -53,7 +53,8 @@ const useStyles = makeStyles({
     height: '100vh',
     overflow: 'auto',
     padding: '10%',
-    paddingBottom: '20%',
+    paddingRight: '25%',
+    paddingBottom: '25%',
   },
   hideItem: {
     visibility: 'hidden',
