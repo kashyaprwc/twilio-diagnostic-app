@@ -21,8 +21,6 @@ const useStyles = makeStyles({
   contentContainer: {
     position: 'absolute',
     top: '0',
-    left: '50%',
-    transform: 'translateX(-50%)',
   },
   scrollContainer: {
     transition: 'all 1s ease',
@@ -51,7 +49,10 @@ const useStyles = makeStyles({
   },
   item: {
     transition: 'all 0.75s ease',
-    padding: '3em 0',
+    width: '100vw',
+    height: '100vh',
+    overflow: 'auto',
+    padding: '10%',
   },
   hideItem: {
     visibility: 'hidden',
@@ -74,14 +75,6 @@ const useStyles = makeStyles({
         visibility: 'hidden',
       },
     },
-  },
-  brandSidebar: {
-    background: '#06033A',
-    position: 'fixed',
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 'calc(100% - 250px)',
   },
 });
 

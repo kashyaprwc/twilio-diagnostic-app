@@ -14,11 +14,11 @@ const useStyles = makeStyles({
     padding: '23px',
     borderRadius: '8px',
     minHeight: '280px',
-    width: '388px',
+    width: '300px',
   },
   audioLevelContainer: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'left',
     height: '2.5em',
   },
   topLine: {

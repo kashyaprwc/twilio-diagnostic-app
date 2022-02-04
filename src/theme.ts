@@ -23,16 +23,18 @@ export default createTheme({
       '@global': {
         'html, body, #root': {
           height: '100%',
+          width: '100%',
         },
       },
     },
     MuiContainer: {
       root: {
-        width: '950px',
+        width: '100%',
       },
     },
     MuiButton: {
       root: {
+        marginBottom: '10px',
         borderRadius: '4px',
         textTransform: 'none',
         color: 'rgb(40, 42, 43)',
