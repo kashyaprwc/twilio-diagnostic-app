@@ -20,7 +20,11 @@ const useStyles = makeStyles({
   paper: {
     padding: '2em',
     borderRadius: '8px',
-    width: '300px',
+  },
+  mobilePaper: {
+    '@media (max-width:600px)': {
+      minHeight: '300px',
+    },
   },
   videoContainer: {
     display: 'flex',
@@ -140,7 +144,7 @@ export function CameraTest() {
         </Grid>
 
         <Grid item md={5}>
-          <Paper className={classes.paper}>
+          <Paper className={clsx(classes.paper)}>
             <Grid container direction="column" alignItems="center">
               <Typography variant="subtitle2">
                 <strong>Video Preview</strong>
