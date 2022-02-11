@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/twilio-diagnostic-app/static/js/main.04062fc4.chunk.js",
+    "main.js.map": "/twilio-diagnostic-app/static/js/main.04062fc4.chunk.js.map",
+    "runtime-main.js": "/twilio-diagnostic-app/static/js/runtime-main.3a68d8f0.js",
+    "runtime-main.js.map": "/twilio-diagnostic-app/static/js/runtime-main.3a68d8f0.js.map",
+    "static/js/2.a7239519.chunk.js": "/twilio-diagnostic-app/static/js/2.a7239519.chunk.js",
+    "static/js/2.a7239519.chunk.js.map": "/twilio-diagnostic-app/static/js/2.a7239519.chunk.js.map",
+    "index.html": "/twilio-diagnostic-app/index.html",
+    "static/js/2.a7239519.chunk.js.LICENSE.txt": "/twilio-diagnostic-app/static/js/2.a7239519.chunk.js.LICENSE.txt",
+    "static/media/ErrorIllustration.8feaf07a.png": "/twilio-diagnostic-app/static/media/ErrorIllustration.8feaf07a.png",
+    "static/media/Excellent.cefab6c4.png": "/twilio-diagnostic-app/static/media/Excellent.cefab6c4.png",
+    "static/media/Hello.8062e010.png": "/twilio-diagnostic-app/static/media/Hello.8062e010.png",
+    "static/media/SettingsIllustration.8dc4c04e.png": "/twilio-diagnostic-app/static/media/SettingsIllustration.8dc4c04e.png",
+    "static/media/Success.89b9312e.png": "/twilio-diagnostic-app/static/media/Success.89b9312e.png",
+    "static/media/TestsPassed.c211a030.png": "/twilio-diagnostic-app/static/media/TestsPassed.c211a030.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a68d8f0.js",
+    "static/js/2.a7239519.chunk.js",
+    "static/js/main.04062fc4.chunk.js"
+  ]
+}
